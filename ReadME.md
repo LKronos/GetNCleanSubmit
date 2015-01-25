@@ -1,11 +1,15 @@
-	NEED TO KNOW
-* Downloaded files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip   to my hard drive, and unzip them.  
-* For the read.tables code to run, make sure the ìUCI HAR Datasetî folder is a subfolder called ìprojectî in the R working directly 
-* Read the other README from the data download (provided  at end of this document)
-* Features Info  from the data download may be helpful ( provided at end of this document)
-* Data in theîInertial Signalsî folder isnít being used.  From reading the coursera project FAQ thread for course 
+README file for Getting and Cleaning Data Coursera Course.  
+Thhis Github Repo contains the README file, the Code Book and the R Script for assessment purposes. 
+	
 
-FILES  used
+* Downloaded  data files from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip   to my hard drive, and unzip them.  
+* In the R Script, fFor the read.tables code to run, make sure the ‚ÄúUCI HAR Dataset‚Äù folder is a subfolder called ‚Äúproject‚Äù in the R working directly 
+* Read the other README from the data download (provided at end of this document)
+* Features Info  from the data download may be helpful ( provided at end of this document)
+
+Note:  Data in the‚ÄùInertial Signals‚Äù folder isn‚Äôt being used.  From reading the coursera project FAQ thread for course 
+
+Data FILES  used
 activity_labels 
 features file
 features info
@@ -27,10 +31,21 @@ More file specifics
 6 LAYING
 
 * subject files [either test or train] - single column file that identifies the subjects. In other words the volunteers of a group of 30 people as numbered 1 through 30 (merged into data) 
-* X_ files [either test or train] ñ file that has 561 columns of data  (the bulk of the data, other files are mostly identifiers) 
-* y_ files [either test or train] ñfile that identifies the activity; as  numeric code ( 1 through 6); see activity label for key   (merged into data, and descriptive values  used) 
-* features  file  ñ gives a numbered list  of feature names,   is the start of the data column names; see code book for translations/clean up;   sample  and last line looks like:  
-1 tBodyAcc-mean()-X2 tBodyAcc-mean()-Y3 tBodyAcc-mean()-Z4 tBodyAcc-std()-X5 tBodyAcc-std()-Y6 tBodyAcc-std()-Z7 tBodyAcc-mad()-X8 tBodyAcc-mad()-Y9 tBodyAcc-mad()-Z10 tBodyAcc-max()-X11 tBodyAcc-max()-Y12 tBodyAcc-max()-Z
+* X_ files [either test or train] ‚Äì file that has 561 columns of data  (the bulk of the data, other files are mostly identifiers) 
+* y_ files [either test or train] ‚Äìfile that identifies the activity; as  numeric code ( 1 through 6); see activity label for key   (merged into data, and descriptive values  used) 
+* features  file  ‚Äì gives a numbered list  of feature names,   is the start of the data column names; see code book for translations/clean up;   sample  and last line looks like:  
+1 tBodyAcc-mean()-X
+2 tBodyAcc-mean()-Y
+3 tBodyAcc-mean()-Z
+4 tBodyAcc-std()-X
+5 tBodyAcc-std()-Y
+6 tBodyAcc-std()-Z
+7 tBodyAcc-mad()-X
+8 tBodyAcc-mad()-Y
+9 tBodyAcc-mad()-Z
+10 tBodyAcc-max()-X
+11 tBodyAcc-max()-Y
+12 tBodyAcc-max()-Z
 
 561 angle(Z,gravityMean)
 
@@ -101,14 +116,14 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 
 
-README ñ from original downloaded data
+README ‚Äì from original downloaded data
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
-DITEN - Universit‡ degli Studi di Genova.
+DITEN - Universit√† degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
